@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://c76s3c5scrnwl"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_jfa86"]
+[ext_resource type="PackedScene" uid="uid://dgqerhfhqn2fs" path="res://Prefab Scenes/coin.tscn" id="2_g4vqx"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_khxra"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xd3qu"]
+size = Vector3(2, 0.01, 2)
+
+[node name="Pea3" type="Node3D" unique_id=1101598735]
+
+[node name="proto_controller" parent="." unique_id=198489032 groups=["Player"] instance=ExtResource("1_jfa86")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3713864, 0.5551666, 6.0378036)
+
+[node name="Floor" type="StaticBody3D" parent="." unique_id=1968530064]
+disable_mode = 1
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor" unique_id=906615166]
+transform = Transform3D(22.251799, 0, 0, 0, 22.251799, 0, 0, 0, 22.251799, 0, 0, 0)
+mesh = SubResource("PlaneMesh_khxra")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor" unique_id=2021230358]
+transform = Transform3D(22.040487, 0, 0, 0, 22.040487, 0, 0, 0, 22.040487, 0, 0, 0)
+shape = SubResource("BoxShape3D_xd3qu")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=192917358]
+transform = Transform3D(1, 0, 0, 0, -0.45349276, 0.89125997, 0, -0.89125997, -0.45349276, 0, 28.85257, 0)
+
+[node name="Coin" parent="." unique_id=1639239324 instance=ExtResource("2_g4vqx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26573965, 0.53648984, 0.6575718)
+
+[node name="Coin2" parent="." unique_id=1477964267 instance=ExtResource("2_g4vqx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.51658, 0.53648984, -4.758274)
+
+[node name="Coin3" parent="." unique_id=1945743228 instance=ExtResource("2_g4vqx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.783505, 0.53648984, -4.758274)
+
+[node name="Coin4" parent="." unique_id=2016003656 instance=ExtResource("2_g4vqx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.684165, 0.53648984, -9.693063)

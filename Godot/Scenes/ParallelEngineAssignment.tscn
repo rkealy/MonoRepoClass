@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://mxr4goolsgl7"]
+
+[ext_resource type="PackedScene" uid="uid://cvaac445c5jdp" path="res://Assets/hedge-corner.fbx" id="1_c8j7h"]
+[ext_resource type="PackedScene" uid="uid://cimw8dnmk3n53" path="res://Assets/hedge.fbx" id="2_xuir8"]
+[ext_resource type="PackedScene" uid="uid://0ip4krrqmgt6" path="res://Scenes/HedgeSquare.tscn" id="3_xuir8"]
+[ext_resource type="PackedScene" uid="uid://tua2sqhifj7j" path="res://Scenes/HedgePath.tscn" id="4_o8vub"]
+[ext_resource type="PackedScene" uid="uid://cqjerh57787ab" path="res://Assets/block-grass-overhang-low-narrow.fbx" id="5_g5hw8"]
+[ext_resource type="PackedScene" uid="uid://dyynx4rt26b5v" path="res://Assets/block-moving-large.fbx" id="6_myr5t"]
+[ext_resource type="PackedScene" uid="uid://cykyoq7c6hx54" path="res://Assets/jewel.fbx" id="7_kj21v"]
+[ext_resource type="PackedScene" uid="uid://qwjrc1586f1h" path="res://Assets/flowers.fbx" id="8_kj21v"]
+[ext_resource type="PackedScene" uid="uid://2qtdp8trkk" path="res://Assets/flowers-tall.fbx" id="9_ultk6"]
+[ext_resource type="PackedScene" uid="uid://b4076aajkxy5y" path="res://Assets/grass.fbx" id="10_fm0tm"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_n7knf"]
+
+[node name="Node3D" type="Node3D" unique_id=316009823]
+
+[node name="Floor" type="MeshInstance3D" parent="." unique_id=1593975721]
+transform = Transform3D(31.820929, 0, 0, 0, 31.820929, 0, 0, 0, 31.820929, 0, 0, 0)
+mesh = SubResource("PlaneMesh_n7knf")
+
+[node name="InnerHedge" parent="." unique_id=2054661068 instance=ExtResource("1_c8j7h")]
+transform = Transform3D(2.5, 0, 0, 0, 7, 0, 0, 0, 2.5, -5, 0, 5)
+
+[node name="hedge-corner2" parent="InnerHedge" unique_id=2095181348 instance=ExtResource("1_c8j7h")]
+transform = Transform3D(-4.3711392e-08, 0, 1, 0, 1, 0, -1, 0, -4.3711392e-08, 4, 0, 0)
+
+[node name="hedge-corner3" parent="InnerHedge" unique_id=336922891 instance=ExtResource("1_c8j7h")]
+transform = Transform3D(-4.3711392e-08, 0, -1, 0, 1, 0, 1, 0, -4.3711392e-08, 0, 0, -4)
+
+[node name="hedge-corner4" parent="InnerHedge" unique_id=2106046596 instance=ExtResource("1_c8j7h")]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 4, 0, -4)
+
+[node name="hedge" parent="InnerHedge" unique_id=274845503 instance=ExtResource("2_xuir8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="hedge3" parent="InnerHedge" unique_id=1429387297 instance=ExtResource("2_xuir8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="hedge2" parent="InnerHedge" unique_id=544568903 instance=ExtResource("2_xuir8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="hedge4" parent="InnerHedge" unique_id=623106475 instance=ExtResource("2_xuir8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4.7)
+
+[node name="hedge5" parent="InnerHedge" unique_id=697983913 instance=ExtResource("2_xuir8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4.7)
+
+[node name="hedge7" parent="InnerHedge" unique_id=649339678 instance=ExtResource("2_xuir8")]
+transform = Transform3D(-0.00055853924, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -0.00055853924, 0, 0, -1.010225)
+
+[node name="hedge8" parent="InnerHedge" unique_id=330139614 instance=ExtResource("2_xuir8")]
+transform = Transform3D(-0.00055853924, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -0.00055853924, 0, 0, -3.0102248)
+
+[node name="hedge9" parent="InnerHedge" unique_id=1569171812 instance=ExtResource("2_xuir8")]
+transform = Transform3D(-0.00055853924, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -0.00055853924, 0, 0, -2.0102248)
+
+[node name="hedge10" parent="InnerHedge" unique_id=152136206 instance=ExtResource("2_xuir8")]
+transform = Transform3D(-0.00055853924, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -0.00055853924, 4.7, 0, -1.010225)
+
+[node name="hedge11" parent="InnerHedge" unique_id=1437159109 instance=ExtResource("2_xuir8")]
+transform = Transform3D(-0.00055853924, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -0.00055853924, 4.7, 0, -3.0102248)
+
+[node name="hedge12" parent="InnerHedge" unique_id=154810289 instance=ExtResource("2_xuir8")]
+transform = Transform3D(-0.00055853924, 0, -0.9999998, 0, 1, 0, 0.9999998, 0, -0.00055853924, 4.7, 0, -2.0102248)
+
+[node name="OuterHedge" parent="." unique_id=304406900 instance=ExtResource("3_xuir8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="HedgePath" parent="." unique_id=54585903 instance=ExtResource("4_o8vub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7869179, 0, -7.5080433)
+
+[node name="Node3D3" parent="HedgePath" unique_id=27163460 instance=ExtResource("4_o8vub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.4975395)
+
+[node name="hedge-corner2" parent="HedgePath" unique_id=1419711048 instance=ExtResource("1_c8j7h")]
+transform = Transform3D(-1.09278474e-07, 0, -2.5, 0, 2.5, 0, 2.5, 0, -1.09278474e-07, 1.7599568, 4.7683716e-07, -4.889763)
+
+[node name="hedge-corner3" parent="HedgePath" unique_id=528326989 instance=ExtResource("1_c8j7h")]
+transform = Transform3D(-2.5, 0, 2.1855695e-07, 0, 2.5, 0, -2.1855695e-07, 0, -2.5, -3.3339179, 0, -4.8899565)
+
+[node name="Monument" type="Node3D" parent="." unique_id=898542403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="block-grass-overhang-low-narrow" parent="Monument" unique_id=1950349297 instance=ExtResource("5_g5hw8")]
+transform = Transform3D(3, 0, 0, 0, 1, 0, 0, 0, 3, 8.005637, 0, 0.002013445)
+
+[node name="block-moving-large" parent="Monument/block-grass-overhang-low-narrow" unique_id=627099321 instance=ExtResource("6_myr5t")]
+transform = Transform3D(0.23570226, 0, 0.23570226, 0, 2.6437535, 0, -0.23570226, 0, 0.23570226, -0.0018790563, 0, -0.0006711483)
+
+[node name="jewel" parent="Monument/block-grass-overhang-low-narrow/block-moving-large" unique_id=1122051738 instance=ExtResource("7_kj21v")]
+transform = Transform3D(1.767767, 0, 1.767767, 0, 0.94562525, 0, -1.767767, 0, 1.767767, 0, 0.6135782, 0)
+
+[node name="flowers" parent="Monument/block-grass-overhang-low-narrow/block-moving-large" unique_id=1698482610 instance=ExtResource("8_kj21v")]
+transform = Transform3D(0.85610473, 0, -0.5168023, 0, 0.37825006, 0, 0.5168023, 0, 0.85610473, -0.058850296, 0.5071942, 0.0023090784)
+
+[node name="flowers-tall" parent="Monument/block-grass-overhang-low-narrow" unique_id=290051923 instance=ExtResource("9_ultk6")]
+transform = Transform3D(0.33333334, 0, 0, 0, 1, 0, 0, 0, 0.33333334, -0.19535525, 0.37942994, -0.19960158)
+
+[node name="flowers-tall2" parent="Monument/block-grass-overhang-low-narrow" unique_id=1933307704 instance=ExtResource("9_ultk6")]
+transform = Transform3D(-0.2811305, 0, 0.17909986, 0, 1, 0, -0.17909986, 0, -0.2811305, 0.18308815, 0.37942994, -0.19960158)
+
+[node name="flowers-tall3" parent="Monument/block-grass-overhang-low-narrow" unique_id=7705819 instance=ExtResource("9_ultk6")]
+transform = Transform3D(0.14851046, 0.0032157274, 0.2984048, -0.019522484, 0.9998089, -0.0010583466, -0.29835114, -0.005668425, 0.14854486, -0.19535525, 0.37942994, 0.20608032)
+
+[node name="flowers-tall4" parent="Monument/block-grass-overhang-low-narrow" unique_id=1018424403 instance=ExtResource("9_ultk6")]
+transform = Transform3D(0.046661794, 0, 0.33005118, 0, 1, 0, -0.33005118, 0, 0.046661794, 0.18308815, 0.37942994, 0.20220058)
+
+[node name="grass" parent="Monument/block-grass-overhang-low-narrow" unique_id=1481836166 instance=ExtResource("10_fm0tm")]
+transform = Transform3D(0.33333334, 0, 0, 0, 1, 0, 0, 0, 0.33333334, 0.005111555, 0.5539254, 0.204232)
+
+[node name="grass2" parent="Monument/block-grass-overhang-low-narrow" unique_id=428145522 instance=ExtResource("10_fm0tm")]
+transform = Transform3D(0.08039786, 0, -0.32349235, 0, 1, 0, 0.32349235, 0, 0.08039786, -0.26883474, 0.44098914, -0.06643518)
+
+[node name="grass3" parent="Monument/block-grass-overhang-low-narrow" unique_id=1029922205 instance=ExtResource("10_fm0tm")]
+transform = Transform3D(0.29520148, 0, 0.15481341, 0, 1, 0, -0.15481341, 0, 0.29520148, 0.27477953, 0.49073184, 0.018942993)
+
+[node name="grass4" parent="Monument/block-grass-overhang-low-narrow" unique_id=1298819288 instance=ExtResource("10_fm0tm")]
+transform = Transform3D(0.17694435, 0, -0.18084726, 0, 0.92844653, 0, 0.18784758, 0, 0.17035034, 0.0038535395, 0.49255806, -0.25137848)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1269129148]
+transform = Transform3D(-0.9998017, -9.311379e-10, 0.01991296, 0.011755657, 0.80714583, 0.5902351, -0.01607266, 0.5903522, -0.8069858, 0, 19.976898, -30.093468)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=534562562]
+transform = Transform3D(-0.99811274, 0.0141899185, -0.059745997, -0.058640227, 0.068556875, 0.9959223, 0.01822805, 0.9975463, -0.06759533, 0, 19.976898, -0.6276398)

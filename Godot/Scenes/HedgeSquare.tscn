@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://0ip4krrqmgt6"]
+
+[ext_resource type="PackedScene" uid="uid://cvaac445c5jdp" path="res://Assets/hedge-corner.fbx" id="1_wo0uc"]
+[ext_resource type="PackedScene" uid="uid://cimw8dnmk3n53" path="res://Assets/hedge.fbx" id="2_5327p"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="hedge-corner" parent="." instance=ExtResource("1_wo0uc")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -5, 0, 5)
+
+[node name="hedge-corner2" parent="." instance=ExtResource("1_wo0uc")]
+transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278474e-07, 5, 0, 5)
+
+[node name="hedge-corner3" parent="." instance=ExtResource("1_wo0uc")]
+transform = Transform3D(-1.09278474e-07, 0, -2.5, 0, 2.5, 0, 2.5, 0, -1.09278474e-07, -5, 0, -5)
+
+[node name="hedge-corner4" parent="." instance=ExtResource("1_wo0uc")]
+transform = Transform3D(-2.5, 0, -3.774895e-07, 0, 2.5, 0, 3.774895e-07, 0, -2.5, 5, 0, -5)
+
+[node name="hedge" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 2.5, 0, 5)
+
+[node name="hedge3" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -2.5, 0, 5)
+
+[node name="hedge2" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 5)
+
+[node name="hedge4" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 2.5, 0, -6.75)
+
+[node name="hedge5" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -2.5, 0, -6.75)
+
+[node name="hedge6" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, -6.75)
+
+[node name="hedge7" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(-0.001396348, 0, -2.4999995, 0, 2.5, 0, 2.4999995, 0, -0.001396348, -5, 0, 2.4744372)
+
+[node name="hedge8" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(-0.001396348, 0, -2.4999995, 0, 2.5, 0, 2.4999995, 0, -0.001396348, -5, 0, -2.5255623)
+
+[node name="hedge9" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(-0.001396348, 0, -2.4999995, 0, 2.5, 0, 2.4999995, 0, -0.001396348, -5, 0, -0.025562286)
+
+[node name="hedge10" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(-0.001396348, 0, -2.4999995, 0, 2.5, 0, 2.4999995, 0, -0.001396348, 6.75, 0, 2.4744372)
+
+[node name="hedge11" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(-0.001396348, 0, -2.4999995, 0, 2.5, 0, 2.4999995, 0, -0.001396348, 6.75, 0, -2.5255623)
+
+[node name="hedge12" parent="." instance=ExtResource("2_5327p")]
+transform = Transform3D(-0.001396348, 0, -2.4999995, 0, 2.5, 0, 2.4999995, 0, -0.001396348, 6.75, 0, -0.025562286)

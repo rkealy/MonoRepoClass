@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dgqerhfhqn2fs"]
+
+[ext_resource type="Script" uid="uid://p76bvra3pv48" path="res://Scripts/CoinBehavior.gd" id="1_0t63x"]
+[ext_resource type="PackedScene" uid="uid://bavm10w52ifcf" path="res://Assets/coin-gold.fbx" id="2_v7riw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pdq0q"]
+size = Vector3(1, 1, 0.7661133)
+
+[node name="Node3D" type="Node3D" unique_id=1639239324]
+
+[node name="Coin" type="Area3D" parent="." unique_id=1946600707]
+transform = Transform3D(1.9109443, 0, 0, 0, 3.7393863, 0, 0, 0, 1.9109443, -0.028894395, 0.10073805, -0.026383638)
+script = ExtResource("1_0t63x")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Coin" unique_id=866480499]
+transform = Transform3D(1, 0, 0, 0, 0.562, 0, 0, 0, 0.562, 0, 0, 0)
+
+[node name="coin-gold" parent="Coin/MeshInstance3D" unique_id=1433338185 instance=ExtResource("2_v7riw")]
+transform = Transform3D(1.1894017, 0, 0, 0, 1.1894016, 0, 0, 0, 1.1894016, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Coin" unique_id=256631938]
+transform = Transform3D(0.5066885, 0, 0, 0, 0.2749649, 0, 0, 0, 0.1815587, 0, 0.13343696, -0.002093047)
+shape = SubResource("BoxShape3D_pdq0q")
