@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dbgkh1u1ctd8d"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_sdoq2"]
+[ext_resource type="PackedScene" uid="uid://0ha2ptudc0l1" path="res://Assets/arrow.fbx" id="2_cqac6"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cqac6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fw48d"]
+size = Vector3(1, 0.5073242, 1)
+
+[node name="PEA4" type="Node3D" unique_id=1470328454]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1327202912]
+transform = Transform3D(28.715233, 0, 0, 0, 28.715233, 0, 0, 0, 28.715233, 0, 0, 0)
+mesh = SubResource("PlaneMesh_cqac6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=2075267795]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=647772996]
+transform = Transform3D(2.0218608, 0, 0, 0, 0.13907012, 0, 0, 0, 2.0141835, -0.014867567, -0.013504387, -0.0024045084)
+shape = SubResource("BoxShape3D_fw48d")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1249686235]
+transform = Transform3D(1, 0, 0, 0, 0.030835107, 0.9995245, 0, -0.9995245, 0.030835107, 0, 19.794077, 0)
+
+[node name="ProtoController" parent="." unique_id=261161943 instance=ExtResource("1_sdoq2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26020926, 0.6252005, 0.62056124)
+
+[node name="arrow" parent="." unique_id=1718015214 instance=ExtResource("2_cqac6")]
+transform = Transform3D(3.9107728, 0, 0, 0, 3.9107728, 0, 0, 0, 3.9107728, 0.24372977, 0.6252005, -7.4897766)
+
+[node name="arrow2" parent="." unique_id=1524253912 instance=ExtResource("2_cqac6")]
+transform = Transform3D(3.9107728, 0, 0, 0, 3.9107728, 0, 0, 0, 3.9107728, 0.24372977, 0.6252005, 9.257034)

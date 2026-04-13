@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://tua2sqhifj7j"]
+
+[ext_resource type="PackedScene" uid="uid://cimw8dnmk3n53" path="res://Assets/hedge.fbx" id="1_m18dd"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="hedge13" parent="." instance=ExtResource("1_m18dd")]
+transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.506, 0, -2.5, 0, -1.09278474e-07, 0, 0, 0)
+
+[node name="hedge6" parent="hedge13" instance=ExtResource("1_m18dd")]
+transform = Transform3D(1, 0, 3.5527137e-15, 0, 1, 0, -3.5527137e-15, 0, 1, -0.04646945, -3.8055637e-07, -1.3429592)

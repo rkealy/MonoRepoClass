@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c03fbqcd3qd81"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_fnkjn"]
+[ext_resource type="PackedScene" uid="uid://c468hckxa53mm" path="res://Prefab Scenes/InputHandler.tscn" id="2_8y1wj"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tw0ab"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t7eqy"]
+size = Vector3(1, 0.5073242, 1)
+
+[node name="InClass" type="Node3D" unique_id=18535185]
+
+[node name="InputHandler" parent="." unique_id=829094577 instance=ExtResource("2_8y1wj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, 4)
+
+[node name="ProtoController" parent="." unique_id=1378189570 instance=ExtResource("1_fnkjn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.302212, 0.6936643, -0.027626514)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2127141079]
+transform = Transform3D(28.715233, 0, 0, 0, 28.715233, 0, 0, 0, 28.715233, 0, 0, 0)
+mesh = SubResource("PlaneMesh_tw0ab")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=1915874389]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1973725439]
+transform = Transform3D(2.0218608, 0, 0, 0, 0.13907012, 0, 0, 0, 2.0141835, -0.014867567, -0.013504387, -0.0024045084)
+shape = SubResource("BoxShape3D_t7eqy")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1624501715]
+transform = Transform3D(1, 0, 0, 0, 0.030835107, 0.9995245, 0, -0.9995245, 0.030835107, 0, 19.794077, 0)
